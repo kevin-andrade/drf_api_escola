@@ -18,3 +18,8 @@ class Cursos(admin.ModelAdmin):
     list_per_page = 10
 
 admin.site.register(Curso, Cursos)
+
+class Matriculas(admin.ModelAdmin):
+    list_display = ('id', 'curso', 'periodo')
+    list_display_links = ('id', 'curso')
+    
